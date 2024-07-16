@@ -131,7 +131,7 @@ class Sprites:
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
             'shadersnewwhite', 'lightingnew',
-            'whitepatches', 'tortiepatchesmasks',
+            'whitepatches', 'exoticwhitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
             'symbols'
         ]:
@@ -188,10 +188,18 @@ class Sprites:
              'CAKE', 'ROSINA', 'PRINCESS'],
             ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE']
         ]
+        
+        exotic_white_patches = [
+            ['JACKAL', 'CHITAL']    
+        ]
 
         for row, patches in enumerate(white_patches):
             for col, patch in enumerate(patches):
                 self.make_group('whitepatches', (col, row), f'white{patch}')
+                
+        for row, patches in enumerate(exotic_white_patches):
+            for col, patch in enumerate(patches):
+                self.make_group('exoticwhitepatches', (col, row), f'white{patch}')
 
         # Define colors and categories
         color_categories = [
