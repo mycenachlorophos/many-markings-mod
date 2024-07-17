@@ -25,6 +25,12 @@ class Pelt:
         'Masked': 'masked',
         'Tortie': None,
         'Calico': None,
+        'Maned': 'maned',
+        'Ocelot': 'ocelot',
+        'Lynx': 'lynx',
+        'Royal': 'royal',
+        'Bobcat': 'bobcat',
+        'Cheetah': 'cheetah',
     }
 
     # ATTRIBUTES, including non-pelt related
@@ -52,7 +58,8 @@ class Pelt:
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-                   'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
+                   'classic', 'sokoke', 'agouti', 'singlestripe', 'masked', 'maned', 'ocelot', 'lynx', 'royal',
+                   'bobcat', 'cheetah']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
@@ -97,10 +104,10 @@ class Pelt:
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
     ]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
-    spotted = ["Speckled", "Rosette"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti", "Royal"]
+    spotted = ["Speckled", "Rosette", "Lynx", "Bobcat"]
     plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
-    exotic = ["Bengal", "Marbled", "Masked"]
+    exotic = ["Bengal", "Marbled", "Masked", "Maned", "Ocelot", "Cheetah"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -987,7 +994,13 @@ class Pelt:
             "Singlestripe": "dorsal-striped c_n",
             "Rosette": "unusually spotted c_n",
             "Sokoke": "c_n tabby",
-            "Masked": "masked c_n tabby"
+            "Masked": "masked c_n tabby",
+            "Maned": "oddly caped c_n",
+            "Ocelot": "oddly dappled c_n",
+            "Lynx": "flecked c_n",
+            "Royal": "dappled c_n",
+            "Bobcat": "spotted c_n",
+            "Cheetah": "unusually speckled c_n"
         }
 
         # Start with determining the base color name
