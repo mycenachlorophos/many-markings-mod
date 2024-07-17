@@ -130,6 +130,7 @@ class Sprites:
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
+            'manedcolours', 'ocelotcolours', 'lynxcolours', 'royalcolours', 'bobcatcolours', 'cheetahcolours',
             'shadersnewwhite', 'lightingnew',
             'whitepatches', 'exoticwhitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
@@ -212,7 +213,8 @@ class Sprites:
             'singlecolours', 'tabbycolours', 'marbledcolours', 'rosettecolours',
             'smokecolours', 'tickedcolours', 'speckledcolours', 'bengalcolours',
             'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours',
-            'singlestripecolours', 'maskedcolours'
+            'singlestripecolours', 'maskedcolours', 'manedcolours', 'ocelotcolours',
+            'lynxcolours', 'royalcolours', 'bobcatcolours', 'cheetahcolours'
         ]
 
         for row, colors in enumerate(color_categories):
